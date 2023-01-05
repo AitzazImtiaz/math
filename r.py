@@ -22,7 +22,7 @@ lhs_search_limit = 20
 lhs = LHSHashTable(
     saved_hash,
     lhs_search_limit,
-    [g_const_dict['zeta'](-1)])
+    [g_const_dict['zeta'](1)])
 
 # define the poly domain
 poly_search_domain = Zeta3Domain1(
@@ -33,7 +33,7 @@ poly_search_domain = Zeta3Domain1(
 enumerator = EfficientGCFEnumerator(
     lhs,
     poly_search_domain,
-    [g_const_dict['zeta'](-1)]
+    [g_const_dict['zeta'](1)]
 )
 
 results = enumerator.full_execution()
